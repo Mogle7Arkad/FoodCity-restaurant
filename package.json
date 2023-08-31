@@ -1,0 +1,23 @@
+{
+  "name": "foodcity-restaurant",
+  "version": "1.0.0",
+  "description": "A restaurant webpage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mogle7Arkad/FoodCity-restaurant.git"
+  },
+  "author": "Ali George",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mogle7Arkad/FoodCity-restaurant/issues"
+  },
+  "homepage": "https://github.com/Mogle7Arkad/FoodCity-restaurant#readme",
+  "devDependencies": {
+    "cli": "^1.0.1",
+    "webpack": "^5.88.2"
+  }
+}
