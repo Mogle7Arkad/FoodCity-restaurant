@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#content{
+    height: 100vh;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+    margin: 0px 50px;
+    padding: 15px 0px;
+}
+
+.headName {
+    color: #f87217;
+}
+.tab{
+    border: none;
+    background-color: white;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.container{
+    background: url(./img/namu.jpg);
+    background-repeat: no-repeat;
+    background-size: 1440px;
+    height: 75vh;
+    opacity: .7;
+}
+
+.main-content{
+    color: #ffff;
+    padding-top: 22%;
+    opacity: 2.0;
+    margin-left: 40px;
+}
+
+.main-content h1,
+.main-content p{
+    filter: contrast(500%);
+    color: black;
+}
+.main-content p{
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+.tabs{
+    padding: 10px;
+    color: black;
+    border: 1px solid black;
+    width: 120px;
+    cursor: pointer;
+}
