@@ -1,17 +1,7 @@
 
 const createRestaurantHomePage = () => {
+
     const content = document.querySelector("#content");
-    const pageContent = document.createElement("div");
-    pageContent.classList.add("page-content");
-
-    const header = document.createElement("div");
-    header.classList.add("header-container");
-
-    const restaurantName = document.createElement("h1");
-    restaurantName.classList.add("headName");
-    restaurantName.textContent = "food city"; 
-    header.appendChild(restaurantName);
-    pageContent.appendChild(header);
 
     const mainContent = document.createElement("div");
     mainContent.classList.add("main-content");
@@ -29,7 +19,6 @@ const createRestaurantHomePage = () => {
     tableBtn.classList.add("tab");
     tableBtn.textContent = "BOOK A TABLE";
     mainContent.appendChild(tableBtn);
-    content.appendChild(pageContent);
     content.appendChild(mainContent);
 }
 export default createRestaurantHomePage;
