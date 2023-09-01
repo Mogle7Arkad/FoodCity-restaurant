@@ -32,9 +32,11 @@ const createTabs = () => {
     div2.textContent = "Menu";
     div3.textContent = "Contact";
 
-    header.appendChild(div1);
-    header.appendChild(div2);
-    header.appendChild(div3);
+    tabs.appendChild(div1);
+    tabs.appendChild(div2);
+    tabs.appendChild(div3);
+    
+    header.appendChild(tabs);
 
     content.appendChild(header)
 
