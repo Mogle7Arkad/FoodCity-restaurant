@@ -8,37 +8,28 @@ const createRestaurantHomePage = () => {
     header.classList.add("header-container");
 
     const restaurantName = document.createElement("h1");
+    restaurantName.classList.add("headName");
     restaurantName.textContent = "food city"; 
     header.appendChild(restaurantName);
     pageContent.appendChild(header);
 
+    const mainContent = document.createElement("div");
+    mainContent.classList.add("main-content");
+
     const briefDescription = document.createElement("h1");
-    briefDescription.textContent = "Satisfying your cravings since 2022";
-    header.appendChild(briefDescription);
+    briefDescription.textContent = "Satisfying cravings since 2022";
+    mainContent.appendChild(briefDescription);
 
     const briefs = document.createElement("p");
-    briefs.textContent = "Experience our seasonal menu in a beautiful classic environment Eat the tastiest meal from our the comfort of food city"
-    header.appendChild(briefs);
+    briefs.textContent = "Experience our seasonal menu in a beautiful classic environment Eat the tastiest meal from the comfort of food city"
+    mainContent.appendChild(briefs);
 
     const tableBtn = document.createElement("button");
     tableBtn.setAttribute("id", "tableBtn");
     tableBtn.classList.add("tab");
     tableBtn.textContent = "BOOK A TABLE";
-    header.appendChild(tableBtn);
-
-
-
-
-    const headerImage = document.createElement("div");
-    headerImage.classList.add("header-image");
-    const image = document.createElement("img");
-    image.src = "./img/namu.jpg";
-    image.height = "500";
-    image.width = "500";
-    headerImage.appendChild(image);
-    pageContent.appendChild(headerImage);
-
-
+    mainContent.appendChild(tableBtn);
     content.appendChild(pageContent);
+    content.appendChild(mainContent);
 }
 export default createRestaurantHomePage;
