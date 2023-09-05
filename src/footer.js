@@ -10,7 +10,7 @@ const createFooter = () => {
     const footerContact = document.createElement("div");
     footerContact.classList.add("Contact");
     
-    const linksHead = document.createElement("h5");
+    const linksHead = document.createElement("h4");
     linksHead.classList.add("links-head");
     linksHead.textContent = "Quick Links";
     links.appendChild(linksHead);
@@ -32,7 +32,7 @@ const createFooter = () => {
 
     footer.appendChild(links)
 
-    const contact = document.createElement("h5");
+    const contact = document.createElement("h4");
     contact.classList.add("links-head");
     contact.textContent = "Contact";
     footerContact.appendChild(contact);

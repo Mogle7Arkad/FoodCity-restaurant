@@ -3,6 +3,12 @@ const createRestaurantHomePage = () => {
 
     const content = document.querySelector("#content");
 
+    const baseDiv = document.createElement("div");
+    baseDiv.classList.add("base-div");
+
+    const contentDiv = document.createElement("div");
+    contentDiv.classList.add("content-div");
+
     const container = document.createElement("div");
     container.classList.add("container");
     
@@ -23,7 +29,12 @@ const createRestaurantHomePage = () => {
     tableBtn.classList.add("tabs");
     tableBtn.textContent = "BOOK A TABLE";
     mainContent.appendChild(tableBtn);
-    container.appendChild(mainContent);
-    content.appendChild(container);
+    
+    contentDiv.appendChild(mainContent);
+    contentDiv.appendChild(container);
+
+    baseDiv.appendChild(contentDiv);
+
+    content.appendChild(baseDiv);
 }
 export default createRestaurantHomePage;
