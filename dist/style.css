@@ -20,12 +20,22 @@
 .headName {
     color: #f87217;
 }
+
 .tab{
     border: none;
     background-color: white;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: bold;
     margin-right: 20px;
     cursor: pointer;
+    color: #f87217;
+}
+
+.tab:hover{
+    transition: 0.5s;
+    transform: scale(1.09);
+    color: rgb(240, 70, 70);
+    border: 1px solid rgb(240, 70, 70);
 }
 
 .base-div{
@@ -42,6 +52,7 @@
     grid-template-columns: 1fr 2fr;
     background-size: 1440px;
     height: 75vh;
+    box-shadow: 5px 3px 3px 5px;
 }
 
 .main-content{
@@ -69,14 +80,19 @@
     cursor: pointer;
 }
 
+.tabs:hover{
+    transition: 0.5s;
+    transform: scale(1.09);
+    border-color: rgb(240, 70, 70);
+}
+
 .footer-container{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
     gap: 30%;
-    /* color: white; */
-    background-color: rgb(90, 76, 76);
+    background-color: rgb(236, 136, 21);
 }
 
 .links-head{
@@ -86,8 +102,6 @@
 .links-content{
     margin-bottom: 10px;
 }
-
-/*contact*/
 
 .contact-div h4{
     margin-left: 24%;
@@ -104,16 +118,18 @@ form{
     flex-wrap: wrap;
     flex-direction: column;
 }
+
 input{
     padding: 10px;
 }
+
 textarea{
     resize: none;
-    min-height: 250px;
+    min-height: 200px;
 }
 
 /*menu*/
 
-.category{
-    display: flex;
+.cat-cont{
+    background-color: bisque;
 }
